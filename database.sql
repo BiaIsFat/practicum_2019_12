@@ -32,7 +32,7 @@ CREATE TABLE `cadmin` (
   PRIMARY KEY (`uid`),
   KEY `cno_cadmin` (`cno`),
   CONSTRAINT `cno_cadmin` FOREIGN KEY (`cno`) REFERENCES `cinema` (`cno`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +41,7 @@ CREATE TABLE `cadmin` (
 
 LOCK TABLES `cadmin` WRITE;
 /*!40000 ALTER TABLE `cadmin` DISABLE KEYS */;
-INSERT INTO `cadmin` VALUES (1,'zlf','123',1),(2,'lgr','123',1),(3,'lmx','123',2),(4,'zsh','123',2);
+INSERT INTO `cadmin` VALUES (1,'zlf','123',1),(2,'lgr','123',1),(3,'lmx','123',2),(4,'zsh','123',2),(5,'zjy','123',3);
 /*!40000 ALTER TABLE `cadmin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -226,7 +226,7 @@ CREATE TABLE `padmin` (
 
 LOCK TABLES `padmin` WRITE;
 /*!40000 ALTER TABLE `padmin` DISABLE KEYS */;
-INSERT INTO `padmin` VALUES ('lgr','123'),('lmx','123'),('zlf','123'),('zsh','123');
+INSERT INTO `padmin` VALUES ('lgr','123'),('lmx','123'),('zjy','123'),('zlf','123'),('zsh','123');
 /*!40000 ALTER TABLE `padmin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -615,4 +615,4 @@ SET character_set_client = @saved_cs_client;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-30 10:19:46
+-- Dump completed on 2019-12-30 20:55:00
